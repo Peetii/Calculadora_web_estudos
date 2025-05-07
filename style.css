@@ -1,0 +1,124 @@
+/*Esse trecho de CSS é uma "reset" básica,
+ muito usada para garantir que os elementos de uma página comecem com o mesmo comportamento de espaçamento
+e layout, independentemente do navegador. Aqui está o que cada parte faz:
+
+padding: 0;
+Remove todo o preenchimento interno (padding) dos elementos.
+
+margin: 0;
+Remove todas as margens externas (margin) dos elementos.
+
+box-sizing: border-box;
+Define o modelo de caixa como border-box, o que faz com que o padding e
+ as bordas sejam incluídos na largura e altura definidas, facilitando o controle do layout.*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 8px 0;
+}
+
+body{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #000000;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    width: 500px;
+    height: auto;
+    min-height: 400px;
+    padding: 20px;
+
+}
+
+
+button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background-color: #a1ff8936;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c6ffc1;
+    border-color: #f1f1f1;
+    border: 20px;
+
+}
+
+button:active {
+    background-color: #92900c69;
+    border-radius: 100px;
+    color: yellowgreen;
+}
+
+#resultado{
+    font-weight: bold;
+    font-size: 32px;
+    color: grey;
+}
+label{
+    margin-bottom: -15px;
+    margin-left: -130px;
+
+}
+#operador {
+    width: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background-color: #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#operador:hover {
+    border-color: #888;
+}
+
+#operador:focus {
+    border-color: #f39c12;
+    background-color: #333;
+}
+
+h3{
+    color: red;
+    margin: 4.5px;
+    padding: 0;
+}
